@@ -7,7 +7,17 @@ import { useCartContext } from '../context/cart_context'
 import { useUserContext } from '../context/user_context'
 
 const CartButtons = () => {
-  return <h4>cart buttons </h4>
+  return <Wrapper className="cart-btn-wrapper">
+    <Link to="/cart" className="cart-btn">
+      <span className="cart-container">
+        <FaShoppingCart/>
+        <span className="cart-value"></span>
+      </span>
+    </Link>
+    <button className="auth-btn" type="button">
+      Login <FaUserPlus/>
+    </button>
+  </Wrapper>
 }
 
 const Wrapper = styled.div`

@@ -25,6 +25,7 @@ const Nav = () => {
           <li key={id}>{text}</li>
         })}
       </ul>
+      <CartButtons/>
     </div>
   </NavContainer>
 }
