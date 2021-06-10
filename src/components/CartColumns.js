@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useProductsContext } from '../context/products_context'
 
 const CartColumns = () => {
+
+
   return <h4>cart columns</h4>
 }
 
